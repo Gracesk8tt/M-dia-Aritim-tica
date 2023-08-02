@@ -1,0 +1,15 @@
+function solucao(lista) {
+  const totalDinheiro = lista.reduce((acumulador, elementoAtual) => acumulador + elementoAtual, 0);
+  const mediaDiaria = totalDinheiro / lista.length;
+
+  console.log(mediaDiaria);
+}
+
+function processData(input) {
+  	const strings = input.split(" ");
+    const numeros = [];
+	for(let i = 0; i < strings.length; i++) {
+    	  numeros.push(parseInt(strings[i] ,10));
+  	}
+    solucao(numeros);
+} 
